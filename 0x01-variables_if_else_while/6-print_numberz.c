@@ -1,17 +1,18 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - Prints the numbers since 0 to 9
- *
- * Return: Always(Sucessful)
+ * main - Entry point
+ * Description: prints char below 10
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-int c;
-for (c = '0'; c <= '9'; c++)
-{
-        putchar(c);
-}
-putchar('\n');
-return(0);
+	int a;
+
+	for (a = 0; a < 10; a++)
+	{
+		putchar(a + '0');
+	}
+	putchar('\n');
+	return (0);
 }
