@@ -1,17 +1,19 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - Prints lowercase alphabets
- *
- * Return: Always(Sucessful)
+ * main -Entry point
+ * Description: prints allsingle digit numbers of
+ * base 10 from 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-char c;
-for (c = '0'; c <= '9'; c++)
-{
-        putchar(c);
-}
-putchar('\n');
-return(0);
+	int a;
+
+	for (a = 0; a < 10; a++)
+	{
+		printf("%d", a);
+	}
+	putchar('\n');
+	return (0);
 }
