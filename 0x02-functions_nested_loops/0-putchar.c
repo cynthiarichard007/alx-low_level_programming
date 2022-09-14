@@ -1,33 +1,24 @@
-#ifndef HOLBERTON_H_INCLUDED
+#include "main.h"
 
-#define HOLBERTON_H_INCLUDED
+/**
+ * main - prints Putchar
+ *
+ * Description: prints _putchar
+ *
+ * Return: 0 (Success)
+ */
 
-Int _putchar(char);
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-Void print_alphabet(void);
-
-Void print_alphabet_x10(void);
-
-Int _islower(int c);
-
-Int _isalpha(int c);
-
-Int print_sign(int n);
-
-Int _abs(int);
-
-Int print_last_digit(int);
-
-Void jack_bauer(void);
-
-Void times_table(void);
-
-Int add(int a, int b);
-
-Void print_to_98(int n);
-
-Void print_times_table(int n);
-
-Void num(int r, int n);
-
-#endif
+	return (0);
+}
