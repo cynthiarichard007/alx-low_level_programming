@@ -2,12 +2,16 @@
 #include <stdio.h>
 
 /**
- * mul - multiplier
- * @a: int to mult
- * @b: int to mult
- * Return: result of two
+ * print_numbers - prints the numbers
+ *
  */
-int mul(int a, int b)
+void print_numbers(void)
 {
-	return (a * b);
+	int i;
+
+	for (i = '0'; i <= '9'; i++)
+	{
+		_putchar(i);
+	}
+	_putchar('\n');
 }
